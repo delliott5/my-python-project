@@ -4,8 +4,8 @@ def check_battery(level):
     if level < 20:
         return "⚠️ Battery Critical: Land immediately!"
     elif level < 50:
-        return "🔋 Battery low: Return to base soon."
+        return f"🔋 Battery at {level}% : Return to base soon."
     else:
-        return "✅ Battery OK."
+        return f"✅ Battery healthy at {level}."
 
-print(check_battery(45))
+print(check_battery(75))
